@@ -48,7 +48,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -59,6 +61,10 @@
     <ProjectReference Include="..\NSBDevWorkflowProto.BEndpoint.Message\NSBDevWorkflowProto.BEndpoint.Message.csproj">
       <Project>{53415bed-892d-4a3c-8681-02347068d4cc}</Project>
       <Name>NSBDevWorkflowProto.BEndpoint.Message</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NSBDevWorkflowProto.CEndpoint.Message\NSBDevWorkflowProto.CEndpoint.Message.csproj">
+      <Project>{97577712-687b-4bb3-b12f-f5337b8c205f}</Project>
+      <Name>NSBDevWorkflowProto.CEndpoint.Message</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,6 +1,7 @@
 ﻿using System;
 using NSBDevWorkflowProto.AEndpoint.Message;
 using NSBDevWorkflowProto.BEndpoint.Message;
+using NSBDevWorkflowProto.CEndpoint.Message;
 using NServiceBus;
 
 namespace NSBDevWorkflowProto.Client
@@ -19,6 +20,7 @@ namespace NSBDevWorkflowProto.Client
             Console.WriteLine("-------------------------------");
             Console.WriteLine("'a' to send an AEndpointCommand");
             Console.WriteLine("'b' to send an BEndpointCommand");
+            Console.WriteLine("'c' to send an CEndpointCommand");
             Console.WriteLine("'q' to exit");
             Console.WriteLine("-------------------------------");
             Console.WriteLine("-------------------------------");
@@ -46,6 +48,12 @@ namespace NSBDevWorkflowProto.Client
                         {
                             bus.Send(new BEndpointCommand { Sent = DateTime.Now });
                             Console.WriteLine("Sent BEndpointCommand");
+                            break;
+                        }
+                    case 'c':
+                        {
+                            bus.Send(new CEndpointCommand { Sent = DateTime.Now });
+                            Console.WriteLine("Sent CEndpointCommand");
                             break;
                         }
                     default:

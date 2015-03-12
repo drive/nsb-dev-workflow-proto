@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B6B423C5-A305-427F-B744-1EB2FD545FAB}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{4CAA89F4-157D-4925-A06E-76FA5D5D9445}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>NSBDevWorkflowProto.Dev.Endpoint.Host</RootNamespace>
-    <AssemblyName>NSBDevWorkflowProto.Dev.Endpoint.Host</AssemblyName>
+    <RootNamespace>NSBDevWorkflowProto.CEndpoint</RootNamespace>
+    <AssemblyName>NSBDevWorkflowProto.CEndpoint</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -44,25 +42,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="CEndpointHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\NSBDevWorkflowProto.AEndpoint\NSBDevWorkflowProto.AEndpoint.csproj">
-      <Project>{7e0e9768-5058-4b50-b9e1-8b31ecd962da}</Project>
-      <Name>NSBDevWorkflowProto.AEndpoint</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\NSBDevWorkflowProto.BEndpoint\NSBDevWorkflowProto.BEndpoint.csproj">
-      <Project>{44c13b2a-bab6-46a1-b3e0-57dc348c93d1}</Project>
-      <Name>NSBDevWorkflowProto.BEndpoint</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\NSBDevWorkflowProto.CEndpoint\NSBDevWorkflowProto.CEndpoint.csproj">
-      <Project>{4caa89f4-157d-4925-a06e-76fa5d5d9445}</Project>
-      <Name>NSBDevWorkflowProto.CEndpoint</Name>
+    <ProjectReference Include="..\NSBDevWorkflowProto.CEndpoint.Message\NSBDevWorkflowProto.CEndpoint.Message.csproj">
+      <Project>{97577712-687b-4bb3-b12f-f5337b8c205f}</Project>
+      <Name>NSBDevWorkflowProto.CEndpoint.Message</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
