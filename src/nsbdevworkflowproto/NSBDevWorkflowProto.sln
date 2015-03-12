@@ -3,8 +3,60 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AEndpoint", "AEndpoint", "{97FB71BD-099F-48AA-95D4-A3A8E90F18C4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BEndpoint", "BEndpoint", "{C5749152-A823-4D2D-8625-1749A393D939}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NSBDevWorkflowProto.Dev.Endpoint.Host", "NSBDevWorkflowProto.Dev.Endpoint.Host\NSBDevWorkflowProto.Dev.Endpoint.Host.csproj", "{B6B423C5-A305-427F-B744-1EB2FD545FAB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NSBDevWorkflowProto.AEndpoint", "NSBDevWorkflowProto.AEndpoint\NSBDevWorkflowProto.AEndpoint.csproj", "{7E0E9768-5058-4B50-B9E1-8B31ECD962DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NSBDevWorkflowProto.BEndpoint", "NSBDevWorkflowProto.BEndpoint\NSBDevWorkflowProto.BEndpoint.csproj", "{44C13B2A-BAB6-46A1-B3E0-57DC348C93D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NSBDevWorkflowProto.Client", "NSBDevWorkflowProto.Client\NSBDevWorkflowProto.Client.csproj", "{1172BDCC-0D68-4991-BED1-3B74C614C863}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NSBDevWorkflowProto.AEndpoint.Message", "NSBDevWorkflowProto.AEndpoint.Message\NSBDevWorkflowProto.AEndpoint.Message.csproj", "{887FCC91-49BF-41CB-BB34-DAD1DC75289B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NSBDevWorkflowProto.BEndpoint.Message", "NSBDevWorkflowProto.BEndpoint.Message\NSBDevWorkflowProto.BEndpoint.Message.csproj", "{53415BED-892D-4A3C-8681-02347068D4CC}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6B423C5-A305-427F-B744-1EB2FD545FAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6B423C5-A305-427F-B744-1EB2FD545FAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6B423C5-A305-427F-B744-1EB2FD545FAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6B423C5-A305-427F-B744-1EB2FD545FAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E0E9768-5058-4B50-B9E1-8B31ECD962DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E0E9768-5058-4B50-B9E1-8B31ECD962DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E0E9768-5058-4B50-B9E1-8B31ECD962DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E0E9768-5058-4B50-B9E1-8B31ECD962DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44C13B2A-BAB6-46A1-B3E0-57DC348C93D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44C13B2A-BAB6-46A1-B3E0-57DC348C93D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44C13B2A-BAB6-46A1-B3E0-57DC348C93D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44C13B2A-BAB6-46A1-B3E0-57DC348C93D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1172BDCC-0D68-4991-BED1-3B74C614C863}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1172BDCC-0D68-4991-BED1-3B74C614C863}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1172BDCC-0D68-4991-BED1-3B74C614C863}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1172BDCC-0D68-4991-BED1-3B74C614C863}.Release|Any CPU.Build.0 = Release|Any CPU
+		{887FCC91-49BF-41CB-BB34-DAD1DC75289B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{887FCC91-49BF-41CB-BB34-DAD1DC75289B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{887FCC91-49BF-41CB-BB34-DAD1DC75289B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{887FCC91-49BF-41CB-BB34-DAD1DC75289B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53415BED-892D-4A3C-8681-02347068D4CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53415BED-892D-4A3C-8681-02347068D4CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53415BED-892D-4A3C-8681-02347068D4CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53415BED-892D-4A3C-8681-02347068D4CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7E0E9768-5058-4B50-B9E1-8B31ECD962DA} = {97FB71BD-099F-48AA-95D4-A3A8E90F18C4}
+		{44C13B2A-BAB6-46A1-B3E0-57DC348C93D1} = {C5749152-A823-4D2D-8625-1749A393D939}
+		{887FCC91-49BF-41CB-BB34-DAD1DC75289B} = {97FB71BD-099F-48AA-95D4-A3A8E90F18C4}
+		{53415BED-892D-4A3C-8681-02347068D4CC} = {C5749152-A823-4D2D-8625-1749A393D939}
 	EndGlobalSection
 EndGlobal
