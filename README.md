@@ -5,7 +5,7 @@ An example of an alternative NServiceBus solution structure which allows develop
 This example includes a development only project - NSBDevWorkflowProto.Dev.Endpoint.Host - which starts a process that loads all three endpoints (each with it's own bus configuration). It also includes a crude client which allows sending of messages to handlers defined by the three endpoints.
 
 #### Note
-Set the startup projects for the solution to the Client **and** the Dev.Endpoint.Host projects
+Set the startup projects for the solution to the Client **and** Dev.Endpoint.Host projects
 
 #### TODO:
  * Extract config
